@@ -1,4 +1,4 @@
-# CommonSize [![](https://jitpack.io/v/licheedev/SmallestWidthDimens.svg)](https://jitpack.io/#licheedev/SmallestWidthDimens)
+# SmallestWidthDimens [![](https://jitpack.io/v/licheedev/SmallestWidthDimens.svg)](https://jitpack.io/#licheedev/SmallestWidthDimens)
 
 Android SmallestWidth屏幕适配方案
 
@@ -41,6 +41,17 @@ dependencies {
         implementation 'com.github.licheedev.SmallestWidthDimens:sw_750:1.0.0'
         implementation 'com.github.licheedev.SmallestWidthDimens:sw_1080:1.0.0'
 }
+```
+
+3. 使用
+
+```
+// 正数dp
+android:layout_width="@dimen/sw_16dp"
+// 负数dp
+android:layout_width="@dimen/_sw_10dp"
+// sp
+android:textSize="@dimen/sw_36sp"
 ```
 
 没有合适的话，就按照下面配置重新生成一个module，复制到自己项目里面，然后 `compile project(':生成的模块名')`导入即可
