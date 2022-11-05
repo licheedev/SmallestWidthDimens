@@ -1,0 +1,4 @@
+include ':app'
+include ':generator'
+include ':sw_750'
+include ':sw_1080'
